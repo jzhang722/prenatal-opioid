@@ -5,9 +5,28 @@ Contact: jonathan.zhang@duke.edu
 
 Below are the instructions to replicate the findings in the paper.
 
-### Data: 
+### Data
 The data analyzed in this paper comes from British Columbia’s Data Innovation Program. Information about data access can be found on Population BC’s website at https://www.popdata.bc.ca/projects/data-innovation-program. For those who are interested, we will do our best to assist them in gaining access to the data. Data is confidential and not available in this repository.
 
-### Files:
+### Files
+#### Data construction scripts
+XXX produces four csv files that are used to construct measures of in utero exposure using medical records, prescription records, and perinatal files. 
+
+XXX pulls all opioid prescriptions used by mothers.
+
+XXX pulls all opioid prescriptions dispensed in BC.
+
+XXX pulls mothers covariates which are used as controls for propensity score matching.
+
+`Create All Births.R` creates cohort of all births in BC and relevant covariates of newborns and their parents.
+
+`Create Panel.R` creates panel outcomes from ages 0-18 for all births in BC.
+
+#### Analysis scripts
+XXX performs the main analysis of the paper and produces regression output.
+
+XXX converts the regression output into exhibits.
+
+XXX performs propensity score matching.
 
 ### Replication Instructions

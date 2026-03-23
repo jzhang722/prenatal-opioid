@@ -1,5 +1,5 @@
 # README
-This repository contains programming code used in Simard Duplain and Zhang (2026) "**Association Between Prenatal Opioid Exposure and Health, Education, and Foster Care Between Ages 0-18**".
+This repository contains programming code used in **Simard Duplain and Zhang (2026)** "**[Association Between Prenatal Opioid Exposure and Health, Education, and Foster Care Between Ages 0 and 18](https://academic.oup.com/pnasnexus/article/5/3/pgag024/8503063)**".
 
 Contact: jonathan.zhang@duke.edu 
 
@@ -23,6 +23,8 @@ XXX pulls mothers covariates which are used as controls for propensity score mat
 `Create Panel.R` creates panel outcomes from ages 0-18 for all births in BC.
 
 #### Analysis scripts
+`Setup.R` loads relevant packages and sets the working directory.
+
 XXX performs the main analysis of the paper and produces regression output.
 
 XXX converts the regression output into exhibits.
@@ -30,3 +32,4 @@ XXX converts the regression output into exhibits.
 XXX performs propensity score matching.
 
 ### Replication Instructions
+1. Run `Setup.R` 

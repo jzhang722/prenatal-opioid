@@ -16,21 +16,22 @@ The data analyzed in this paper comes from British Columbia’s Data Innovation 
 
 `Create All Births.R` creates cohort of all births in BC and relevant covariates of newborns and their parents, output is `allbirths.csv`
 
-`Create MCFD variables.R`, `0102_data_gen_health_care_expenditures_20250407.DO`, `0103_data_gen_psychotropic_drugs_20250421.DO`, `0105_data_gen_ia_20250410.DO`, `0106_data_gen_parents_together_20250407.DO`, `0201_data_gen_all_outcomes_20250414.DO` create auxillary variables relevant for child outcomes that feed into creating the panel outcomes.
+The following scripts create auxillary variables relevant for child outcomes that feed into creating the panel outcomes, as well as maternal characteristics:
+- `Create MCFD variables.R`
+- `0102_data_gen_health_care_expenditures_20250407.DO`
+- `0103_data_gen_psychotropic_drugs_20250421.DO`
+- `0105_data_gen_ia_20250410.DO`
+- `0106_data_gen_parents_together_20250407.DO`
+- `0201_data_gen_all_outcomes_20250414.DO` 
 
-
-XXX pulls mothers covariates which are used as controls for propensity score matching.
-
-`Create Panel Outcomes.R` creates panel outcomes from ages 0-18 for all births in BC.
+`Create Panel Outcomes.R` creates panel outcomes from ages 0-18 for all births in BC: `panel_outcomes.gz`
 
 #### Analysis scripts
 `Setup.R` loads relevant packages and sets the working directory.
 
-XXX performs the main analysis of the paper and produces regression output.
+`Analysis Script` performs the analysis of the paper (Figures 1-6) and the supplemental materials.
 
-XXX converts the regression output into exhibits.
 
-XXX performs propensity score matching.
 
 ### Replication Instructions
 1. Run `Setup.R`
@@ -38,4 +39,4 @@ XXX performs propensity score matching.
 3. Run `Create NAS Exposure Measures`
 4. Run `Create All Births.R`
 5. Run `Create MCFD variables.R`, `0102_data_gen_health_care_expenditures_20250407.DO`, `0103_data_gen_psychotropic_drugs_20250421.DO`, `0105_data_gen_ia_20250410.DO`, `0106_data_gen_parents_together_20250407.DO`, `0201_data_gen_all_outcomes_20250414.DO` which creates auxillary variables
-6. 
+6. Run `Analysis Script.R`
